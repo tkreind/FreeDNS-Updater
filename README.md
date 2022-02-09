@@ -1,3 +1,5 @@
+Fork of the main repository to build to ghcr.io with multiple architectures in the open.
+
 # FreeDNS Updater
 
 This image update your domains of freedns automatically every 5 minutes
