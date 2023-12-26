@@ -11,4 +11,4 @@ COPY crontab /var/spool/cron/crontabs/root
 RUN mkdir /var/tmp/freedns
 
 # Run programn every 5 minutes
-CMD test -f "/var/tmp/freedns/freedns_tokens" && /usr/bin/freedns.sh && crond -l 2 -f
+CMD test -f /var/tmp/freedns/freedns_tokens && rm -f /var/tmp/freedns/ip /var/tmp/freedns/freedns_pages.log && /usr/bin/freedns.sh && crond -l 2 -f
