@@ -1,2 +1,3 @@
 # Update domains
 */5 * * * *   /usr/bin/freedns.sh
+@reboot /usr/bin/freedns.sh
